@@ -1,4 +1,3 @@
-(function(fizzbuzz){
 
 	'use strict';
 	// node or not ?
@@ -15,6 +14,7 @@
 			console.log(fizzbuzz(i));
 		});
 	} else {
+		(function(fizzbuzz){
 		var dest = document.querySelector("#result");
 
 		if (typeof fizzbuzz !== 'function') {
@@ -31,6 +31,8 @@
 			}
 		});
 
-	}
+	
 
-})(fizzbuzz);
+		})(fizzbuzz);
+	}	
+
